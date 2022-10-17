@@ -9,21 +9,7 @@ picfbHover.addEventListener('mouseover', (evt) => {
 });
 
 //EDIT 2
-let picViet = document.querySelector(".content-destination img");
 
-
-
-
-picViet.addEventListener('mouseover', (evt) => {
-    picViet.title = "Want to know where this is? CLICK ME!";
-
-});
-
-picViet.addEventListener('click', (evt) => {
-
-const vietImgLink = document.createElement("a");
-
-vietImgLink.src = "https://www.vietnamcoracle.com/phu-quy-island-travel-guide/";
-
-picViet.append
+document.addEventListener('copy', (evt) => {
+    alert("Hey!! Don't touch me.");
 });
