@@ -48,7 +48,7 @@ document.body.addEventListener('mousemove', evt => {
     // console.log (`mouse is at ${clientX}, ${clientY}`)
 })
 
-// EDIT 8 - mouseenter
+// EDIT 8 & 9 - mouseenter & mouse leave
 const destinations = document.querySelectorAll('.destination')
 
 for (let destination of destinations) {
@@ -62,4 +62,15 @@ for (let destination of destinations) {
             }, 500)
         });
 }
+
+//EDIT 10 - keyup
+
+
+window.addEventListener('keyup', evt => {
+    if (evt.key == 6) {    
+    document.body.innerHTML = '<h1>THERE IS NO RETURNING, FOOL!<h1>'
+    }
+})
+
+
 
